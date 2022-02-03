@@ -7,36 +7,122 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
     <title>Document</title>
 </head>
-<body>
+<body class="bg-light">
     <header>
         <div class="overlay">
-            <h4 class="mb-5 text-uppercase fw-lighter">¡nos casamos!</h4>
-            <h1 class="titulo mb-5">Chloe y  Blaqui</h1>
-            <h4 class="mt-5 mb-5 text-uppercase fw-lighter">SABADO 12 DE NOVIEMBRE</h4>       
+            <h4 class="subtitulo mb-5 text-uppercase fw-lighter">¡nos casamos!</h4>
+            <h1 class="titulo mb-5">Colocar Nombre</h1>
+            <h4 class="subtitulo mt-5 mb-5 text-uppercase fw-lighter">SÁBADO 12 DE NOVIEMBRE</h4>       
         </div>        
     </header>
-    <section class="container bg-primary">
-        <div class="row" >
-            <div class="col-2">
-                <span  id="days"></span>
+    
+    <!-- SECCION CRONOMETRO -->
+    <section class="container mt-5">
+        <div class="row d-flex justify-content-around">
+            <div class="col-2 mt-4 shadow p-3 mb-5 bg-light rounded">
+                <div class="text-center fs-1 color-texto" id="days"></div>
+                <div class="d-flex justify-content-center">
+                    <span class="text-uppercase fw-bold text-center color-texto">Días</span>
+                </div>
             </div>
-            <div class="col-2">
-                <span  id="hours"></span>
+            <div class="col-2 mt-4 shadow p-3 mb-5 bg-light rounded">
+                <div class="text-center fs-1 color-texto" id="hours"></div>
+                <div class="d-flex justify-content-center">
+                    <span class="text-uppercase fw-bold text-center color-texto">Horas</span>
+                </div>
             </div>
-            <div class="col-2">
-                <span class="col-2" id="minutes"></span>  
+            <div class="col-2 mt-4 shadow p-3 mb-5 bg-light rounded">
+                <div class="text-center fs-1 color-texto" id="minutes"></div>
+                <div class="d-flex justify-content-center">
+                    <span class="text-uppercase fw-bold text-center color-texto">Minutos</span>
+                </div>
             </div>
-            <div>
-                <span class="col-2" id="seconds"></span>
+            <div class="col-2 mt-4 shadow p-3 mb-5 bg-light rounded">
+                <div class="text-center fs-1 color-texto" id="seconds"></div>
+                <div class="d-flex justify-content-center">
+                    <span class="text-uppercase fw-bold text-center color-texto">Segundos</span>
+                </div>
             </div>
-            
-            
         </div>
     </section>
+
+
+    <!--SECCION INFORMACION-->
+    <section class="container-fluid mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xm-12 mt-2 mb-2">
+                <div class="bg-light p-3 shadow rounded-3" style="border: 3px solid #A9885D;">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid mt-4" src="img/anillos.png" alt="arco" style="width:125px; height: 125px;">
+                    </div>
+                    <h1 class="text-center mt-4" style="font-family: 'Great Vibes', cursive; color:#A9885D;">Ceremonia</h1>
+                    <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 15.00hs</h6>
+                    <p class="letra-texto text-muted text-center fs-5 mt-3">Dirección Las Glicinas 1880, Lujan Provincia de Buenos Aires</p>
+                    <div class="d-flex justify-content-center mt-5">      
+                        <a class="text-muted text-uppercase text-decoration-none align-middle" role="button" data-bs-toggle="modal" data-bs-target="#mapaQuinta" ><img src="img/map.jpg" alt="mapa" style="width:40px; height:40px;">Ver mapa</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xm-12 mt-2 mb-2">
+                <div class="bg-light p-3 shadow rounded-3" style="border: 3px solid #A9885D;">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid mt-4" src="img/copa.png" alt="arco" style="width:125px; height: 125px;">
+                    </div>
+                    <h1 class="text-center mt-4" style="font-family: 'Great Vibes', cursive; color:#A9885D;">Fiesta</h1>
+                    <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 18.30hs</h6>
+                    <p class="letra-texto text-muted text-center fs-5 mt-3">Dirección Las Glicinas 1880, Lujan Provincia de Buenos Aires</p>
+                    <div class="d-flex justify-content-center mt-5">      
+                        <a class="text-muted text-uppercase text-decoration-none align-middle" role="button" data-bs-toggle="modal" data-bs-target="#mapaQuinta" ><img src="img/map.jpg" alt="mapa" style="width:40px; height:40px;">Ver mapa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xm-12 mt-2 mb-2">
+                <div class="bg-light p-3 shadow rounded-3" style="border: 3px solid #A9885D;">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid mt-4" src="img/vistimenta.png" alt="arco" style="width:125px; height: 125px;">
+                    </div>       
+                    <h1 class="text-center mt-4" style="font-family: 'Great Vibes', cursive; color:#A9885D;">Dress Code</h1>
+                    <h6 class="text-center mt-3 text-uppercase letra-texto">semi formal</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xm-12 mt-2 mb-2">
+                <div class="bg-light p-3 shadow rounded-3 " style="border: 3px solid #A9885D;">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid mt-4" src="img/regalos.png" alt="arco" style="width:125px; height: 125px;">
+                    </div>
+                    <h1 class="text-center mt-4" style="font-family: 'Great Vibes', cursive; color:#A9885D;">Regalos</h1>
+                    <p class="letra-texto text-muted text-center mt-3">Si queres, podes hacernos un regalo para nuestra boda o luna de miel. Hace clic para ver nuestros datos bancarios y hacer una transferencia, un depósito o lluvia de sobres.</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="mapaQuinta" tabindex="-1" aria-labelledby="mapaQuintaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="d-flex justify-content-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7816.937945244478!2d-59.140847522582305!3d-34.53791640830124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcaecd081aa9bd2f8!2zMzTCsDMyJzE4LjgiUyA1OcKwMDgnMTYuNCJX!5e0!3m2!1ses-419!2sar!4v1643915359318!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+     
+            <div>
+                <p class="letra-texto text-muted text-center mt-3">Las Glicinas 1880, Lujan Provincia de Buenos Aires</p>
+                <p class="letra-texto text-muted text-center mt-3">Indicaciones: Ruta N° 7 - Salida Calle Roca (posterior a RP 192)</p>
+            </div>    
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

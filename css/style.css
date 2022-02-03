@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
 *{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
+body{height: 900px;
+	background: rgb(208,15,15);
+	background: linear-gradient(90deg, rgba(208,15,15,0.039653361344537785) 0%, rgba(138,17,99,0.036852240896358524) 35%, rgba(179,32,181,0.039653361344537785) 100%);
+}
 header {
 	background: url('http://st.gde-fon.com/wallpapers_original/578212_para_prostor_doroga_luna_vlyublnnyie_2048x1534_www.Gde-Fon.com.jpg');
 	text-align: center;
@@ -27,5 +33,14 @@ header .overlay{
 	margin-bottom: 30px;
 }
 
+.subtitulo{
+	font-family: 'Quicksand', sans-serif;
 
+}
+.color-texto{
+	color: #A9885D;
+}
+.letra-texto{
+	font-family: 'Philosopher', sans-serif;
+}
 

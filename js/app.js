@@ -3,10 +3,10 @@
 //===
 const DATE_TARGET = new Date('11/12/2022 03:30 PM');
 // DOM for render
-const SPAN_DAYS = document.querySelector('span#days');
-const SPAN_HOURS = document.querySelector('span#hours');
-const SPAN_MINUTES = document.querySelector('span#minutes');
-const SPAN_SECONDS = document.querySelector('span#seconds');
+const SPAN_DAYS = document.querySelector('div#days');
+const SPAN_HOURS = document.querySelector('div#hours');
+const SPAN_MINUTES = document.querySelector('div#minutes');
+const SPAN_SECONDS = document.querySelector('div#seconds');
 // Milliseconds for the calculations
 const MILLISECONDS_OF_A_SECOND = 1000;
 const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
@@ -43,3 +43,5 @@ function updateCountdown() {
 updateCountdown();
 // Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+
+var mapaQuinta = new bootstrap.Modal(document.getElementById('mapaQuinta'), options)
