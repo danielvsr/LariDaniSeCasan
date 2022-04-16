@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant&family=Oranienbaum&display=swap');
 
 *{padding: 0; margin: 0; box-sizing: border-box;}
 body{height: 900px;
 	background: rgb(208,15,15);
 	background: linear-gradient(90deg, rgba(208,15,15,0.039653361344537785) 0%, rgba(138,17,99,0.036852240896358524) 35%, rgba(179,32,181,0.039653361344537785) 100%);
+
 }
 header {
-	background: url('http://st.gde-fon.com/wallpapers_original/578212_para_prostor_doroga_luna_vlyublnnyie_2048x1534_www.Gde-Fon.com.jpg');
+	/*background: url('http://st.gde-fon.com/wallpapers_original/578212_para_prostor_doroga_luna_vlyublnnyie_2048x1534_www.Gde-Fon.com.jpg');*/
+	background-image: url("/img/chloe.JPG");
 	text-align: center;
 	width: 100%;
 	height: 400px;
@@ -23,10 +26,105 @@ header .overlay{
 	padding: 50px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+  background-image: linear-gradient( 135deg, #ff93050a 10%, #fd5e086b 100%);
 	
 }
 
+/* .squaredThree */
+.squaredThree {
+	position: relative;
+	float:left;
+	margin: 10px
+  }
+  
+  .squaredThree label {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #c960c9;
+	border-radius: 4px; 
+  }
+  
+  .squaredThree label:after {
+	content: '';
+	width: 9px;
+	height: 5px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #fcfff4;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+  }
+  
+  .squaredThree label:hover::after {
+	opacity: 0.3;
+  }
+  
+  .squaredThree input[type=checkbox] {
+	visibility: hidden;
+  }
+  
+  .squaredThree input[type=checkbox]:checked + label:after {
+	opacity: 1;
+  }
+  /* end .squaredThree */
+  
+  .label-text {
+	position: relative;
+	left: 10px;
+  }
+/*
+  #bg-check input {
+	background-color: rgb(153, 67, 67);
+	border: 0.5px solid #A9885D;
+	box-shadow: #A9885D;
+  }
+  #bg-check input[type=checkbox]:checked + label:after {
+	background-color: #A9885D;
+	opacity: 1;
+  }
+*/
+/*checks*/
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+	background-color: green!important;
+  }
+  
+  .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 255, 0, 0.25)
+  }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+  }
+  .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+	background-color: #C8FFC8; 
+  }
+  
+.form-check-input{
+	background-color: #fff !important;	
+}
+.form-check-input:checked{
+	background-color: #A9885D !important;
+	border: #A9885D;
+}
+.form-check-input:checked:focus{
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #a9885db7;
+}
+.form-check-input:focus{
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.form-check-input:active{
+	background-color: #a9885db7; 
+}
+
+/*FUENTES DEL CODIGO*/
 .titulo {
 	font-family: 'Great Vibes', cursive;
 	font-size: 120px;
@@ -37,10 +135,176 @@ header .overlay{
 	font-family: 'Quicksand', sans-serif;
 
 }
+
+/*RELOJ*/
+.reloj{
+	font-family: 'Halant', serif;
+	font-size: 5rem;
+	color:#A9885D;
+}
+.reloj-background{
+	background: rgb(195,139,34);
+	background: linear-gradient(0deg, rgba(195,139,34,0.26934523809523814) 0%, rgba(253,160,45,0.0032387955182072714) 100%);
+}
+
 .color-texto{
 	color: #A9885D;
 }
 .letra-texto{
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Halant', serif;
+	font-family: 'Oranienbaum', serif;
+	font-size: 20px;
 }
 
+.titulo-card{
+	font-family: 'Great Vibes', cursive;
+	color:#A9885D;
+	font-size: 3rem;
+}
+
+.boton{
+	background:#A9885D;
+	width: 250px;
+	letter-spacing: .2rem;
+	color:white;
+	border: 2px solid rgba(141, 112, 75, 0.089);
+	box-shadow: 2px 2px 5px #999;	
+}
+
+/**/
+.s-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.s-bg{
+	background: url('/img/chloe.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.295);
+	-webkit-filter: grayscale(20%);
+	filter: grayscale(20%);
+}
+.s-bg::after {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index:-1;
+}
+.sombra{
+	text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.808);
+}
+
+.d-row-1{
+    grid-column: 7 / 10;
+    grid-row: 1;
+
+}
+.titulo-row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.titulo-row-1 h1:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0px;
+    border: 1px solid black;
+    align-self: self-end;
+}
+.d-row-2{
+    grid-column: 7 / 11;
+    grid-row: 2/6;
+}
+
+
+.btn-dorado { 
+	color: #ffffff; 
+	background-color: #A9885D; 
+	border-color: #A68E6F; 
+  } 
+   
+  .btn-dorado:hover, 
+  .btn-dorado:focus, 
+  .btn-dorado:active, 
+  .btn-dorado.active, 
+  .open .dropdown-toggle.btn-dorado { 
+	color: #ffffff; 
+	background-color: #B59A76; 
+	border-color: #A68E6F; 
+  } 
+   
+  .btn-dorado:active, 
+  .btn-dorado.active, 
+  .open .dropdown-toggle.btn-dorado { 
+	background-image: none; 
+  } 
+   
+  .btn-dorado.disabled, 
+  .btn-dorado[disabled], 
+  fieldset[disabled] .btn-dorado, 
+  .btn-dorado.disabled:hover, 
+  .btn-dorado[disabled]:hover, 
+  fieldset[disabled] .btn-dorado:hover, 
+  .btn-dorado.disabled:focus, 
+  .btn-dorado[disabled]:focus, 
+  fieldset[disabled] .btn-dorado:focus, 
+  .btn-dorado.disabled:active, 
+  .btn-dorado[disabled]:active, 
+  fieldset[disabled] .btn-dorado:active, 
+  .btn-dorado.disabled.active, 
+  .btn-dorado[disabled].active, 
+  fieldset[disabled] .btn-dorado.active { 
+	background-color: #A9885D; 
+	border-color: #A68E6F; 
+  } 
+   
+  .btn-dorado .badge { 
+	color: #A9885D; 
+	background-color: #ffffff; 
+  }
+
+@media only screen and (max-width:900px){
+	.d-row-2{
+		grid-column: 7 / 12;
+	}
+
+}
+
+@media only screen and (max-width: 700px){
+	.titulo{
+		font-size: 100px;
+	}
+	.s-bg{
+		background-size: contain;	
+	}
+	.d-row-2{
+		grid-column: 7 / 12;
+	}
+	.check-grid-row{
+		display: block ;
+	}
+}
+@media only screen and (max-width: 540px){
+	.titulo{
+		font-size: 90px;
+	}
+
+}
+@media only screen and (max-width: 490px){
+	.titulo{
+		font-size: 80px;
+		margin-bottom: 0px !important;
+	}
+	.subtitulo{
+		margin-top: 0px !important;
+	}
+	.reloj{
+		font-size: 3rem;
+	}
+
+}
