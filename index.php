@@ -77,7 +77,7 @@
                     <span class="text-uppercase fw-bold text-center color-texto">Minutos</span>
                 </div>
             </div>
-            <div class="col-2 col-md-3 col-sm-3 mt-4 p-3 mb-5">
+            <div class="col-3 col-md-3 col-sm-3 mt-4 p-3 mb-5">
                 <div class="text-center color-texto reloj" id="seconds"></div>
                 <div class="d-flex justify-content-center">
                     <span class="text-uppercase fw-bold text-center color-texto">Segundos</span>
@@ -154,7 +154,7 @@
                     </div>
                     <h4 class="card-title text-center titulo-card mt-3 mb-3">Ceremonia</h4>
                     <div>
-                        <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 15.00hs</h6>
+                        <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 14.30hs</h6>
                         <p class="letra-texto text-muted text-center mt-3">Dirección Las Glicinas 1880, Lujan Provincia de Buenos Aires</p>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     </div>
                     <h4 class="card-title text-center titulo-card mt-3 mb-3">Fiesta</h4>
                     <div>
-                        <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 18.30hs</h6>
+                        <h6 class="text-center mt-3 text-uppercase letra-texto">sábado 12 de noviembre 16.00hs</h6>
                         <p class="letra-texto text-muted text-center mt-3">Dirección Las Glicinas 1880, Lujan Provincia de Buenos Aires</p>
                     </div>
                 </div>
@@ -265,77 +265,78 @@
     </div>
 </section> 
 <!--ASISTENCIA-->
-<!--
 
-<section class="border shadow my-0 mx-0 ">
-    <div class="row d-flex justify-content-end my-0 mx-0">
-        <h2 class="titulo-card mt-3 mb-3">Acompañanos</h2>
-        
+
+<section class="s-bg border shadow mt-5 mb-5">
+    <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center mt-5">
+        <h2 class="text-white mt-3 mb-3 col-lg-6" style="font-family: 'Great Vibes', cursive; font-size: 4rem;">Acompañanos</h2>  
     </div>
-    <div class="d-flex justify-content-end">
-        <div class="form col-6">
-            <div class="mb-2">
-                <label for="texto" class="form-label">Por favor, recordá confirmar asistencia antes del 30 de Septiembre</label>
-                <input class="form-control" type="hidden" id="texto">
-            </div>
-            <div class="form-floating mb-3 col-7">
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
-                <label class="text-muted" for="nombre">Nombre Completo</label>
-            </div>
-            <div class="form-floating mb-3 col-7">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                <label class="text-muted" for="email">Correo Electrónico</label>
-            </div>
-            <div class="mb-2">
-                <label for="texto" class="form-label">¿Tenés alguna restricción alimentaria?</label>
-                <input class="form-control" type="hidden" id="texto">
-            </div>
-            <div class="mb-3">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Vegetariano">
-                    <label class="form-check-label" for="inlineCheckbox1">Vegetariano</label>
+    <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center mb-5">
+        <div class="col-lg-6 col-9">
+            <form class="form" action="enviar.php" method="post">
+                <div class="mb-2">
+                    <label for="texto" class="form-label text-white">Por favor, recordá confirmar asistencia antes del 1 de Septiembre</label>
+                    <input class="form-control" type="hidden" id="texto">
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Vegano">
-                    <label class="form-check-label" for="inlineCheckbox2">Vegano</label>
+                <div class="form-floating mb-3 col-lg-7 col-12">
+                    <input type="text" class="form-control" name='nombre' id="nombre" placeholder="Nombre Completo">
+                    <label class="text-muted" for="nombre">Nombre Completo</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Celiaco">
-                    <label class="form-check-label" for="inlineCheckbox3">Celiaco</label>
+                <div class="form-floating mb-3 col-lg-7 col-12">
+                    <input type="email" class="form-control" name='email' id="email" placeholder="name@example.com">
+                    <label class="text-muted" for="email">Correo Electrónico</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Ninguna">
-                    <label class="form-check-label" for="inlineCheckbox4">Ninguna</label>
+                <div class="mb-2">
+                    <label for="texto" class="form-label text-white">¿Tenés alguna restricción alimentaria?</label>
+                    <input class="form-control" type="hidden" id="texto">
                 </div>
-            </div>
-            <div class="form-floating col-7 mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="comentarios" style="height: 100px"></textarea>
-                <label class="text-muted" for="comentarios">¿Comentarios o sugerencias adicionales?</label>
-            </div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Vegetariano">
+                        <label class="form-check-label text-white" for="inlineCheckbox1">Vegetariano</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Vegano">
+                        <label class="form-check-label text-white" for="inlineCheckbox2">Vegano</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Celiaco">
+                        <label class="form-check-label text-white" for="inlineCheckbox3">Celiaco</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Ninguna">
+                        <label class="form-check-label text-white" for="inlineCheckbox4">Ninguna</label>
+                    </div>
+                </div>
+                <div class="form-floating col-lg-7 col-12 mb-3">
+                    <textarea class="form-control" name='mensaje' id="mensaje" style="height: 100px" placeholder="Leave a comment here"></textarea>
+                    <label class="text-muted" for="mensaje">¿Comentarios o sugerencias adicionales?</label>
+                </div>
+                <button class="btn btn-dorado mb-3" type="submit">Enviar</button>
+            </form>
         </div>
     </div>
 </section>
--->
-<!-- ASISTENCIA GRID-->
 
+<!-- ASISTENCIA GRID-->
+<!--
 <section class="s-bg border shadow mt-5 mb-5">
     <article class="s-container mb-3">
         <div class="d-row-1">
             <h2 class="mt-5 text-white" style="font-family: 'Great Vibes', cursive; font-size: 4rem;">Acompañanos</h2>
         </div>
         <div class="d-row-2">
-            <form class="form" action="enviar.php" method="POST" enctype="text/plain">
+            <form class="form" action="enviar.php" method="post">
                 <div class="mb-2">
                     <label for="texto" class="form-label text-white fw-bold">Por favor, recordá confirmar asistencia antes del 30 de Septiembre</label>
                     <input class="form-control" type="hidden" id="texto">
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Completo">
                     <label class="text-muted" for="nombre">Nombre Completo</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                     <label class="text-muted" for="email">Correo Electrónico</label>
                 </div>
                 <div class="mb-2">
@@ -369,7 +370,7 @@
         </div>
     </article>    
 </section>
-
+-->
 <section class="mt-5">
     <nav class="navbar navbar-expand-lg navbar-light" style="background: rgb(195,139,34); background: linear-gradient(0deg, rgba(195,139,34,0.26934523809523814) 0%, rgba(253,160,45,0.0032387955182072714) 100%); ">
         <div class="container-fluid">
@@ -387,7 +388,7 @@
     </nav>
 </section>
 
-<!-- Modal -->
+<!-- MODAL UBICACIÓN -->
 <div class="modal fade" id="mapaQuinta" tabindex="-1" aria-labelledby="mapaQuintaLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
